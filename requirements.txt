@@ -214,7 +214,6 @@ python-dotenv==1.1.1
 python-json-logger==3.2.1
 pytweening==1.2.0
 pytz==2024.2
-pywin32==308
 pywinpty==2.0.14
 pyxnat==1.6.3
 PyYAML==6.0.2
