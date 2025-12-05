@@ -22,8 +22,6 @@ bleach==6.2.0
 blinker==1.8.2
 blis==1.2.0
 cachetools==6.1.0
-caer==2.0.8
-canaro==1.1.0
 catalogue==2.0.10
 certifi==2024.8.30
 cffi==1.17.1
