@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+  KUSH BLOG
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/includes/post.css" %}">
+<link rel="stylesheet" href="{% static "blog/starting_page.css" %}">
+{% endblock %}
+
+{% block content %}
+  
+
+  <section id="welcome">
+    <header>
+      <img src="{% static "blog/images/me.jpeg" %}" alt="Kush - The author of this blog" />
+      <h2>Kushian'sBlog</h2>
+    </header>
+    <p>Hi!I am Kush i love to blog about the tech and the world.</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+
+    <ul>
+      {% for post in posts %}
+      {% include "blog/includes/post.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>What I Do!</h2>
+    <p>Hello! my name is kush suri , i'm 2nd year college student currently pursuing btech with specialization in artifical intelligence and machince learning.</p>
+    <p>
+        My goal is to keep growing in this field and also i would love to help you guys to grow in this field. 
+    </p>
+  </section>
+{% endblock %}
